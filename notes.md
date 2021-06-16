@@ -21,5 +21,5 @@ docker ps --format=$FORMAT
 ##mount volume  
 docker run --name website -v D/Development/website:usr/share/nginx/html -d -p 8080:80 nginx
 
-##share same volume between multiple containers 
+##share same volume between multiple containers   
 docker run --name website-copy --volumes-from website -d -p 8081:80 nginx
