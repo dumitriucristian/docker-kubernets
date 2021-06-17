@@ -57,4 +57,26 @@ docker logs -f containerid
 - one server entrypoint 
 - one controller manager - keep tracks of what is happening in the cluster
 - sheduler - ensure pods placement
+- etc - kubernetes backing key-value
+- virtual network creates one unified machine
 
+### basic component of a node
+
+- ingress - related to dns
+- one pod means one container with it's own private ip but when the ip dies 
+- service - pods comunication throu eacho other 
+#### ConfigMap - external config of the app
+#### Secret - used to store secret data encoded in base64 encoded
+
+## Persist data storage with volumes
+move the storage out of the k8s cluster
+
+## Deployment stateless Apps
+blueprint for multiple podes connected to the same service working as a load balancer
+
+##statefullSet for stateful apps or databases
+
+
+Resources:  
+https://www.youtube.com/watch?v=YrM0UPsnY1Q&ab_channel=EddieJaoudeEddieJaoude       
+https://www.youtube.com/watch?v=Wf2eSG3owoA&t=4315s&ab_channel=TechWorldwithNanaTechWorldwithNana
