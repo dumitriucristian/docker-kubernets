@@ -24,6 +24,8 @@ docker run --name website -v D/Development/website:usr/share/nginx/html -d -p 80
 ##share same volume between multiple containers   
 docker run --name website-copy --volumes-from website -d -p 8081:80 nginx
 
-##build image
+##build image in the current directory with a tag
 docker build --tag website:latest .
 
+##cacheing and packing
+in Dockerfile add ADD package*.json ./
